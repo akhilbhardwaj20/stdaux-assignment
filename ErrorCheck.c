@@ -2,8 +2,8 @@
 int main(){
 char *a = "India";
 char b[] = "India";
-a = a+1;//line 5 -error ssince arrays in C are treated as pointers to their first element, but they are not modifiable lvalues.
-b = b+1;//line 6 . -- it will execute since in this case, a is being incremented to point to the second character in the string "India".
+a = a+1;//line 5 -- it will execute since in this case, a is being incremented to point to the second character in the string "India".
+b = b+1;//line 6 --would result in a compilation error because `b` is an array and cannot be assigned a new value.
 }
 
 // Detailed explanation for the error :
