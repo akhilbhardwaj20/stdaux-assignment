@@ -68,7 +68,42 @@ The purpose of this project is to illustrate the concept of call by value in C a
 - The `printArray` function is called with the `copiedArray` and its size.
 - By passing a copy of the array to the function, any modifications made to the array inside the function will not affect the original array declared in `main()`.
 
-- 
+#############################################################################################################################
+
+****************  Workaround for Question 3   *********************************************
+
+# Array Operations in C
+
+## Description
+This project demonstrates various array operations in C, including pointer arithmetic and array initialization. It also illustrates the difference between arrays and pointers in C.
+
+## Purpose
+The purpose of this project is to help users understand how arrays and pointers work in C and how to perform common operations on arrays, such as accessing elements and pointer arithmetic.
+
+## How to Compile/Run the Code
+1. **Dependencies**: This code requires a C compiler to compile and run. If you don't have one installed, you can use GCC (GNU Compiler Collection) which is available for most operating systems.
+
+2. **Compiling the Code**:
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the C source file (`ErrorCheck.c`) is located.
+   - Run the following command to compile the code using GCC:
+     ```
+     gcc -o ErrorCheck ErrorCheck.c
+     ```
+   This command will generate an executable file named `ErrorCheck` in the same directory.
+
+3. **Running the Code**:
+   - After compiling the code successfully, run the executable by executing the following command:
+     ```
+     ./ErrorCheck
+     ```
+
+## Additional Information
+- The `main` function contains examples of array and pointer operations in C.
+- Line 5 (`a = a + 1;`) demonstrates pointer arithmetic, where the pointer `a` is incremented to point to the next character in the string "India".
+- Line 6 (`b = b + 1;`) would result in a compilation error because `b` is an array and cannot be assigned a new value.
+- The purpose of this project is educational, to help users understand the behavior of arrays and pointers in C and how to use them effectively.
+
 
 
 
